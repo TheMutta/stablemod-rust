@@ -60,6 +60,10 @@ cfg_select! {
         mod zkvm;
         pub use self::zkvm::*;
     }
+    target_os = "stablemod" => {
+        mod stablemod;
+        pub use self::stablemod::*;
+    }
     _ => {
         mod unsupported;
         pub use self::unsupported::*;

@@ -133,3 +133,11 @@ pub(super) fn pre_wasi_self_contained() -> CrtObjects {
 pub(super) fn post_wasi_self_contained() -> CrtObjects {
     new(&[])
 }
+
+pub(super) fn pre_stablemod() -> CrtObjects {
+    all("")
+}
+
+pub(super) fn post_stablemod() -> CrtObjects {
+    new(&[])
+}

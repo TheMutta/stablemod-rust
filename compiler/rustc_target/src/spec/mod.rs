@@ -1802,6 +1802,7 @@ supported_targets! {
     ("x86_64-unknown-linux-ohos", x86_64_unknown_linux_ohos),
 
     ("x86_64-unknown-linux-none", x86_64_unknown_linux_none),
+    ("x86_64-unknown-stablemod", x86_64_unknown_stablemod),
 
     ("thumbv6m-nuttx-eabi", thumbv6m_nuttx_eabi),
     ("thumbv7a-nuttx-eabi", thumbv7a_nuttx_eabi),
@@ -2012,6 +2013,7 @@ crate::target_spec_enum! {
         Windows = "windows",
         Xous = "xous",
         Zkvm = "zkvm",
+        Stablemod = "stablemod",
         Unknown = "unknown",
     }
     other_variant = Other;

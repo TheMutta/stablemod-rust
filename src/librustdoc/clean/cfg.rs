@@ -578,6 +578,7 @@ fn human_readable_target_os(os: Symbol) -> Option<&'static str> {
         Windows => "Windows",
         Xous => "Xous",
         Zkvm => "zero knowledge Virtual Machine",
+        Stablemod => "Stablemod",
         // tidy-alphabetical-end
         Unknown | Other(_) => return Option::None,
     })
