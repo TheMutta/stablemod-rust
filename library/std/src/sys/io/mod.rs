@@ -20,6 +20,10 @@ mod is_terminal {
             mod motor;
             pub use motor::*;
         }
+        target_os = "stablemod" => {
+            mod stablemod;
+            pub use stablemod::*;
+        }
         _ => {
             mod unsupported;
             pub use unsupported::*;

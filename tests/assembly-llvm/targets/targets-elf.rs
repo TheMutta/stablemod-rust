@@ -727,6 +727,9 @@
 //@ revisions: x86_64_unknown_linux_none
 //@ [x86_64_unknown_linux_none] compile-flags: --target x86_64-unknown-linux-none
 //@ [x86_64_unknown_linux_none] needs-llvm-components: x86
+//@ revisions: x86_64_unknown_stablemod
+//@ [x86_64_unknown_stablemod] compile-flags: --target x86_64-unknown-stablemod
+//@ [x86_64_unknown_stablemod] needs-llvm-components: x86
 //@ revisions: x86_64_unknown_managarm_mlibc
 //@ [x86_64_unknown_managarm_mlibc] compile-flags: --target x86_64-unknown-managarm-mlibc
 //@ [x86_64_unknown_managarm_mlibc] needs-llvm-components: x86

@@ -102,6 +102,10 @@ cfg_select! {
         mod zkvm;
         pub use zkvm::fill_bytes;
     }
+    target_os = "stablemod" => {
+        mod stablemod;
+        pub use stablemod::fill_bytes;
+    }
     any(
         all(target_family = "wasm", target_os = "unknown"),
         target_os = "xous",

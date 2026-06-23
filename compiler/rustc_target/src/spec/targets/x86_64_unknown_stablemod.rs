@@ -5,7 +5,7 @@ pub(crate) fn target() -> Target {
     base.cpu = "x86-64".into();
     base.disable_redzone = true;
     base.panic_strategy = PanicStrategy::Abort;
-    base.features = "-mmx,-sse,+soft-float".into();
+    base.features = "-mmx,+sse,+sse2,-soft-float".into();
 
     Target {
         llvm_target: "x86_64-unknown-none".into(),

@@ -45,6 +45,10 @@ cfg_select! {
         mod zkvm;
         pub use zkvm::*;
     }
+    target_os = "stablemod" => {
+        mod stablemod;
+        pub use stablemod::*;
+    }
     _ => {
         mod unsupported;
         pub use unsupported::*;
